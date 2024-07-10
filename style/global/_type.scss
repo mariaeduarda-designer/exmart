@@ -1,0 +1,52 @@
+@use "../abstracts" as *;
+
+// @mixin font($font-family, $font-file, $font-weight) {
+//   @font-face {
+//     font-family: $font-family;
+//     src: url('assets/fonts/' +$font-family+'-' +$font-file+'.ttf');
+//     font-weight: $font-weight;
+//     font-style: normal;
+//   }
+// }
+
+p, h2, h3 {
+  color: var(--Neutral-500);
+}
+
+p {
+  line-height: 1.55;
+}
+
+h1 {
+  font-weight: var(--semibold);
+  font-size: to-rem(28);
+  line-height: 1.2;
+  color: var(--Neutral-600);
+
+  @include media-min(desktop) {
+    font-size: to-rem(40);
+  }
+}
+
+h2 {
+  font-weight: var(--semibold);
+  font-size: to-rem(24);
+  line-height: 1.2;
+
+  @include media-min(desktop) {
+    font-size: to-rem(36);
+  }
+}
+
+h3 {
+  font-weight: var(--semibold);
+  font-size: to-rem(18);
+  line-height: 1.2;
+}
+
+h4 {
+  font-weight: var(--semibold);
+  font-size: to-rem(18);
+  line-height: 1;
+  color: var(--Neutral-300);
+}
