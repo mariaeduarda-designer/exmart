@@ -54,8 +54,8 @@ window.addEventListener('scroll', () => {
   if (isInViewport(document.querySelector('.numbers')) && localStorage.getItem('animated') !== 'true') {
     localStorage.setItem('animated', 'true');
 
-    animateValue(numberOne, 0, 130, 2000);
-    animateValue(numberTwo, 0, 150, 2000);
-    animateValue(numberThree, 0, 20, 2000);
+    animateValue(numberOne, 0, 77, 2000);
+    animateValue(numberTwo, 0, 42, 2000);
+    animateValue(numberThree, 0, 63, 2000);
   }
 })

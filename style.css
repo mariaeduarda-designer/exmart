@@ -61,7 +61,7 @@ a:hover {
   --semibold: 600;
   --medium: 500;
   --regular: 400;
-  --Neutral-700: #212B38;
+  --Neutral-700: #072847;
   --Neutral-600: #464E6A;
   --Neutral-500: #6D758F;
   --Neutral-400: #B4B9C9;
@@ -385,6 +385,22 @@ header.ativo .container #nav {
   header .container #nav .internal-nav li:not(:last-child) {
     margin-bottom: 0;
     margin-right: 0.5rem;
+  }
+  header .container #nav input,
+  header .container #nav select {
+    background: var(--Neutral-300);
+    border-radius: var(--border-small);
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--Neutral-600);
+  }
+  header .container #nav input::-moz-placeholder, header .container #nav select::-moz-placeholder {
+    color: var(--Neutral-500);
+  }
+  header .container #nav input::placeholder,
+  header .container #nav select::placeholder {
+    color: var(--Neutral-500);
   }
   header .container #nav .nav-ctas {
     flex-direction: row;

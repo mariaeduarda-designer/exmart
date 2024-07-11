@@ -199,6 +199,21 @@ header {
         }
       }
 
+      input,
+      select {
+        background: var(--Neutral-300);
+        border-radius: var(--border-small);
+        padding: to-rem(16) to-rem(20);
+        font-size: to-rem(16);
+        line-height: 1.5;
+        color: var(--Neutral-600);
+
+        &::placeholder {
+          color: var(--Neutral-500);
+        }
+      }
+
+
       .nav-ctas {
         flex-direction: row;
 
